@@ -29,8 +29,8 @@ productMainController.controller('listProductController', ['$scope', '$http', '$
             $scope.products = data;
         });
 
-$scope.searchProduct = function(name) {
-    queryProductService.query({name: name}, function (data) {
+$scope.searchProduct = function(name,desc) {
+    queryProductService.query({name: name,desc: desc}, function (data) {
         $scope.products = data;
    });
 

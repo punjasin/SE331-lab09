@@ -26,12 +26,11 @@ public class DbProductDao implements ProductDao{
         return productRepository.findByNameContainingIgnoreCase(name);
     }
 
-
-
     @Override
-    public List<Product> getProductByDescription(String description) {
-        return null;
+    public List<Product> getProductByNameOrDescription(String name,String description) {
+        return productRepository.findByNameOrDescriptionContainingIgnoreCase(name, description);
     }
+
 
     @Override
     public Product getProduct(Long id) {

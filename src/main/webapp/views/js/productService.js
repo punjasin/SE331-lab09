@@ -9,8 +9,9 @@ productService.factory('productService',function($resource){
 
 })
 productService.factory('queryProductService', function ($resource) {
-    return $resource('/getProduct/?name=:name',{query:{method:'GET',params:{name:''},isArray:true}})
-});
+    return $resource('/getProduct/?name=:name&desc=:desc',{query:{method:'GET',params:{name:'',description:''},isArray:true}
+    })
+})
 
 productService.service('totalCalService',function() {
     this.getTotalNetPrice = function (products) {
