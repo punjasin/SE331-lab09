@@ -17,6 +17,10 @@ public class SelectedProduct {
     Product product;
     Integer amount;
 
+    public SelectedProduct() {
+
+    }
+
     public Double getTotalPrice(){
         return 0.0;
     }

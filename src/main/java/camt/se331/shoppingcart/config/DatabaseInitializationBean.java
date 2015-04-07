@@ -24,9 +24,11 @@ package camt.se331.shoppingcart.config;
 
 public class DatabaseInitializationBean implements InitializingBean {
     @Autowired
-    ProductRepository productRepository;
-@Autowired
     ShoppingCartRepository shoppingCartRepository;
+    @Autowired
+    ProductRepository productRepository;
+
+
     @Override
     public void afterPropertiesSet() throws Exception {
         Product[] initProduct = {
@@ -45,6 +47,7 @@ public class DatabaseInitializationBean implements InitializingBean {
         };
 productRepository.save(Arrays.asList(initProduct));
         productRepository.save(new Product(1l, "Kiddle", "the good book reader", 6900.00));
+
         ShoppingCart shoppingCart=new ShoppingCart();
         List<SelectedProduct> selectedProducts=new ArrayList<>();
         SelectedProduct[] initSelectedProduct={
@@ -59,4 +62,5 @@ productRepository.save(Arrays.asList(initProduct));
         shoppingCart.setId(1L);
         shoppingCartRepository.save(shoppingCart);
     }
+
 }

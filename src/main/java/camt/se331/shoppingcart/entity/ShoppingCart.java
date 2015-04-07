@@ -10,7 +10,9 @@ import java.util.List;
 /**
  * Created by Dto on 2/7/2015.
  */
+@Entity
 public class ShoppingCart {
+
     @Id
     @GeneratedValue
     Long id;
@@ -72,6 +74,11 @@ public class ShoppingCart {
     public ShoppingCart(List<SelectedProduct> selectedProducts) {
 
         this.selectedProducts = selectedProducts;
+    }
+
+    public ShoppingCart(List<SelectedProduct> selectedProducts, Date purchaseDate) {
+        this.selectedProducts = selectedProducts;
+        this.purchaseDate = purchaseDate;
     }
 
     public ShoppingCart() {

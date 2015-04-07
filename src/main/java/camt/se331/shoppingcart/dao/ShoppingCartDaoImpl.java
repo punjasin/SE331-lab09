@@ -3,6 +3,7 @@ package camt.se331.shoppingcart.dao;
 import camt.se331.shoppingcart.entity.ShoppingCart;
 import camt.se331.shoppingcart.repository.ShoppingCartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 /**
  * Created by Punjasin on 7/4/2558.
  */
+@Repository
 public class ShoppingCartDaoImpl implements ShoppingCartDao {
 @Autowired
     ShoppingCartRepository shoppingCartRepository;
