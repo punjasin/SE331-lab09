@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" />
     <resourceExtensions />
@@ -28,13 +30,18 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+>>>>>>> 97dc48028eab4d37a5b4a735c829ca6afed342d0
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+  <component name="IdProvider" IDEtalkID="3E7E37A9A9FDF2051D0C3253F0D786C6" />
+=======
   <component name="IdProvider" IDEtalkID="99BAE2EA575326550222C11BB0C4635B" />
+>>>>>>> 97dc48028eab4d37a5b4a735c829ca6afed342d0
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -42,6 +49,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+=======
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -176,4 +188,5 @@
       </state>
     </states>
   </component>
+>>>>>>> 97dc48028eab4d37a5b4a735c829ca6afed342d0
 </project>
