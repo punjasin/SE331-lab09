@@ -19,16 +19,24 @@ productMainController.controller('addProductController', ['$scope', '$http', '$l
 
 
     }]);
+productService.factory('queryProductService', function ($resource) {
+    return $resource('/getProduct/?name=:name',{query:{method:'GET',params:{name:''},isArray:true}})
+});
 
-productMainController.controller('listProductController', ['$scope', '$http', '$rootScope','productService','$route','totalCalService',
-    function ($scope, $http, $rootScope,productService,$route,totalCalService) {
+productMainController.controller('listProductController', ['$scope', '$http', '$rootScope','productService','$route','totalCalService','queryProductService',
+    function ($scope, $http, $rootScope,productService,$route,totalCalService,queryProductService) {
         //$http.get("/product/").success(function (data) {
         var data = productService.query(function(){
             $scope.totalNetPrice= totalCalService.getTotalNetPrice(data);
             $scope.products = data;
         });
 
+$scope.searchProduct = function(name) {
+    queryProductService.query({name: name}, function (data) {
+        $scope.products = data;
+   });
 
+}
         $scope.$on('$locationChangeStart', function (event) {
             $rootScope.addSuccess = false;
             $rootScope.editSuccess = false;
