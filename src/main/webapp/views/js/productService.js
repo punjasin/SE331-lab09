@@ -1,6 +1,13 @@
 'use strict'
 var productService = angular.module('productServices',['ngResource']);
 
+productService.factory('queryProductService',function($resource){
+    return $resource('/getProduct/?name=:name', {
+        query: {method: 'GET', params: {name: ''}, isArray: true}
+    });
+
+})
+
 productService.factory('productService',function($resource){
     return $resource('/product/:id', { id: '@_id' }, {
         update: {
