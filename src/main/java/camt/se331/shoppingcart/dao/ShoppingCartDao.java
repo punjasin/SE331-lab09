@@ -1,6 +1,8 @@
 package camt.se331.shoppingcart.dao;
 
 import camt.se331.shoppingcart.entity.ShoppingCart;
+import camt.se331.shoppingcart.repository.ShoppingCartRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 import java.util.List;
@@ -9,6 +11,8 @@ import java.util.List;
  * Created by Dto on 2/7/2015.
  */
 public interface ShoppingCartDao {
+    @Autowired
+    ShoppingCart findById(Long id);
     List<ShoppingCart> getShoppingCarts();
     List<ShoppingCart> getShoppingCartBefore(Date stateDate);
     List<ShoppingCart> getShoppingCartBetween(Date stateDate, Date stopDate);
