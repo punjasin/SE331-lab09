@@ -1,6 +1,7 @@
 package camt.se331.shoppingcart.config;
 
 import com.jolbox.bonecp.BoneCPDataSource;
+import com.oracle.webservices.internal.api.message.PropertySet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
@@ -32,8 +33,13 @@ import java.util.Properties;
  *
  * @author Petri Kainulainen
  */
-
+@Configuration
+@EnableTransactionManagement(proxyTargetClass = true)
+@EnableJpaRepositories("camt.se331.shoppingcart.repository")
+@PropertySources(value={@PropertySource("classpath:hibernate.properties")})
 class PersistenceContext {
+
+
     private static final String[] ENTITY_PACKAGES = {
             "camt.se331.shoppingcart.entity"
     };
