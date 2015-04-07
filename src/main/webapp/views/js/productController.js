@@ -19,9 +19,7 @@ productMainController.controller('addProductController', ['$scope', '$http', '$l
 
 
     }]);
-productService.factory('queryProductService', function ($resource) {
-    return $resource('/getProduct/?name=:name',{query:{method:'GET',params:{name:''},isArray:true}})
-});
+
 
 productMainController.controller('listProductController', ['$scope', '$http', '$rootScope','productService','$route','totalCalService','queryProductService',
     function ($scope, $http, $rootScope,productService,$route,totalCalService,queryProductService) {
