@@ -288,6 +288,7 @@
       <change type="DELETED" beforePath="C:\Users\Punjasin\Documents\SE331-lab09\bower_components\jquery\src\var\toString.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Punjasin\Documents\SE331-lab09\bower_components\jquery\src\wrap.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java" afterPath="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java" />
     </list>
     <ignored path="lab09.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -313,16 +314,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="680">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/views/app.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -406,12 +397,19 @@
       <file leaf-file-name="DbProductDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73903507" vertical-offset="139" max-vertical-offset="799">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-              <folding>
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.32894737" vertical-offset="139" max-vertical-offset="799">
+              <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -428,7 +426,6 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/common/SerializableResourceBundleMessageSource.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/service/ProductService.java" />
@@ -438,6 +435,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/views/template/productList.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/js/productController.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/js/productService.js" />
+        <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java" />
       </list>
     </option>
@@ -1284,12 +1282,12 @@
       <workItem from="1428378222848" duration="19000" />
       <workItem from="1428378292548" duration="508000" />
       <workItem from="1428386581755" duration="6766000" />
-      <workItem from="1428404025376" duration="6701000" />
+      <workItem from="1428404025376" duration="6828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14705000" />
+    <option name="totallyTimeSpent" value="14832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="853" extended-state="6" />
@@ -1623,14 +1621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/controller/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
@@ -1753,14 +1743,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/repository/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/camt/se331/shoppingcart/dao/DbProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73903507" vertical-offset="139" max-vertical-offset="799">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.32894737" vertical-offset="139" max-vertical-offset="799">
+          <caret line="25" column="64" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
