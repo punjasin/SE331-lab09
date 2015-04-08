@@ -2,8 +2,8 @@
 var productService = angular.module('productServices',['ngResource']);
 
 productService.factory('queryProductService',function($resource){
-    return $resource('/getProduct/?name=:name', {
-        query: {method: 'GET', params: {name: ''}, isArray: true}
+    return $resource('/getProduct/?name=:name&description=:description', {
+        query: {method: 'GET', params: {name: '',description: ''}, isArray: true}
     });
 
 })

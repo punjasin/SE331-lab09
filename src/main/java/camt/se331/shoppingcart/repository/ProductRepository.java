@@ -1,7 +1,6 @@
 package camt.se331.shoppingcart.repository;
 
 import camt.se331.shoppingcart.entity.Product;
-import org.springframework.context.annotation.Profile;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
@@ -13,6 +12,6 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
     List<Product> findByNameLike(String name);
     List<Product> findByNameContaining(String name);
     List<Product> findByNameContainingIgnoreCase(String name);
-
+    List<Product> findByNameContainingIgnoreCaseOrDescriptionContainingIgnoreCase(String name,String description);
 }
 

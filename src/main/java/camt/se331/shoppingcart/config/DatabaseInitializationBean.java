@@ -24,7 +24,7 @@ public class DatabaseInitializationBean implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         Product[] initProduct = {
-                new Product(1l, "Kiddle", "the good book reader", 6900.00),
+                new Product(1l, "Kindle", "the good book reader", 6900.00),
                 new Product(2l, "Surface Pro", "the unknown computer", 34000.00),
                 new Product(3l, "Mac Pro", "Mac Book interim", 44000.00),
                 new Product(4l, "Candle", "use for lightenup the world", 10.00),
@@ -38,7 +38,7 @@ public class DatabaseInitializationBean implements InitializingBean {
 
         };
 productRepository.save(Arrays.asList(initProduct));
-        productRepository.save(new Product(1l, "Kiddle", "the good book reader", 6900.00));
+        productRepository.save(new Product(1l, "Kindle", "the good book reader", 6900.00));
 
     }
 }

@@ -43,7 +43,7 @@ public class ProductController {
     }
 
     @RequestMapping(value ="getProduct",method = RequestMethod.GET)
-    public List<Product> getListByName(@RequestParam("name")String name){
-        return productService.getProductByName(name);
+    public List<Product> getListByName(@RequestParam("name")String name,@RequestParam("description")String description){
+        return productService.getProductByNameOrDescription(name, description);
     }
 }

@@ -34,6 +34,11 @@ public class DbProductDao implements ProductDao{
     }
 
     @Override
+    public List<Product> getProductsByNameOrDescription(String name, String description) {
+        return productRepository.findByNameContainingIgnoreCaseOrDescriptionContainingIgnoreCase(name,description);
+    }
+
+    @Override
     public Product getProduct(Long id) {
         return productRepository.findOne(id);
     }

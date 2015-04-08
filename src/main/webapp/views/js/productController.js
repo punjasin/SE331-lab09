@@ -43,13 +43,13 @@ productMainController.controller('listProductController', ['$scope', '$http', '$
                     $route.reload();
                 })
             }
-        }
+        };
 
         $scope.searchProduct = function(name){
-            queryProductService.query({name:name},function(data){
+            queryProductService.query({name:name,description:name},function(data){
                 $scope.products = data;
             });
-        }
+        };
 
     }]);
 
