@@ -21,6 +21,8 @@
     <script src="app.js"></script>
     <script src="js/productController.js"></script>
     <script src="js/productService.js"></script>
+    <script src="js/ShoppingCartController.js"></script>
+    <script src="js/shoppingCartService.js"></script>
     
 
 

@@ -10,7 +10,6 @@ import java.util.List;
  * Created by Dto on 2/7/2015.
  */
 public interface ProductService {
-    ShoppingCart findById(Long id);
     List<Product> getProducts();
     List<Product> getProductByName(String name);
     List<Product> getProductByNameOrDescription(String name,String description);
